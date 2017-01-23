@@ -18,6 +18,8 @@ RUN apt-get -y install \
   libfile-slurp-perl \
   libgraph-perl \
   libjson-perl \
+  libmath-bigint-gmp-perl \
+  libmath-bigint-perl \
   libmodule-build-perl \
   libnet-imap-simple-perl \
   libnet-imap-simple-ssl-perl \
