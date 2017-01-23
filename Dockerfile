@@ -40,7 +40,7 @@ RUN apt-get -y install \
   perl-doc
 
 # Perl modules not available in binary packages
-#RUN cpan Blah::Blah
+RUN cpan Module::Build::Convert
 
 ## remove the stuff we don't need any more
 #RUN apt-get -y remove --purge gcc make \
