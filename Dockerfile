@@ -9,8 +9,10 @@ RUN apt-get -y install apt-utils gcc git make vim
 
 # Perl stuff I've decided that I need
 RUN apt-get -y install \
+  libdate-manip-perl \
   libdevel-dprof-perl \
   libdevel-profile-perl \
+  libdevice-serialport-perl \
   libemail-simple-perl \
   libencode-perl \
   libfile-slurp-perl \
@@ -27,6 +29,7 @@ RUN apt-get -y install \
   libtest-pod-coverage-perl \
   libtest-pod-perl \
   libtime-hires-perl \
+  libtime-parsedate-perl \
   libtime-stopwatch-perl \
   libwww-mechanize-perl \
   libwww-mechanize-shell-perl \
