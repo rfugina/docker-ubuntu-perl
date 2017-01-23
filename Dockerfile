@@ -28,7 +28,6 @@ RUN apt-get -y install \
   libtest-pod-perl \
   libtime-hires-perl \
   libtime-stopwatch-perl \
-  libtime-stopwatch-perl \
   libwww-mechanize-perl \
   libwww-mechanize-shell-perl \
   libwww-wikipedia-perl \
