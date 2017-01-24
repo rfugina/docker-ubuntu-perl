@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Update package lists and install updates
 RUN apt-get update && apt-get -y upgrade && apt-get -y autoremove
-RUN apt-get -y install apt-utils gcc git make vim
+RUN apt-get -y install apt-utils gcc git make man vim
 
 # Perl stuff I've decided that I need
 RUN apt-get -y install \
