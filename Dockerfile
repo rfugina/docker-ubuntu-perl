@@ -15,8 +15,11 @@ RUN apt-get -y install \
   libdevice-serialport-perl \
   libemail-simple-perl \
   libencode-perl \
+  libfile-homedir-perl \
   libfile-slurp-perl \
+  libgmp-dev \
   libgraph-perl \
+  libio-prompt-perl \
   libjson-perl \
   libmath-bigint-gmp-perl \
   libmath-bigint-perl \
@@ -26,6 +29,7 @@ RUN apt-get -y install \
   libnet-twitter-lite-perl \
   libnet-twitter-perl \
   libpar-dist-perl \
+  libppi-perl \
   libset-scalar-perl \
   libtest-deep-perl \
   libtest-pod-coverage-perl \
@@ -40,7 +44,7 @@ RUN apt-get -y install \
   perl-doc
 
 # Perl modules not available in binary packages
-RUN cpan Module::Build::Convert
+RUN cpan Module::Build::Convert Math::Factoring
 
 ## remove the stuff we don't need any more
 #RUN apt-get -y remove --purge gcc make \
