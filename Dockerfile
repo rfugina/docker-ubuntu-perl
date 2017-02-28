@@ -10,6 +10,7 @@ RUN apt-get -y install apt-utils gcc git make man vim
 # Perl stuff I've decided that I need
 RUN apt-get -y install \
   libdate-manip-perl \
+  libdbd-csv-perl \
   libdevel-dprof-perl \
   libdevel-profile-perl \
   libdevice-serialport-perl \
@@ -20,12 +21,15 @@ RUN apt-get -y install \
   libgmp-dev \
   libgraph-perl \
   libio-prompt-perl \
+  libio-pty-perl \
   libjson-perl \
   libmath-bigint-gmp-perl \
   libmath-bigint-perl \
   libmodule-build-perl \
   libnet-imap-simple-perl \
   libnet-imap-simple-ssl-perl \
+  libnet-ldap-perl \
+  libnet-openssh-perl \
   libnet-twitter-lite-perl \
   libnet-twitter-perl \
   libpar-dist-perl \
@@ -36,6 +40,7 @@ RUN apt-get -y install \
   libtest-pod-perl \
   libtime-hires-perl \
   libtime-parsedate-perl \
+  libtime-stopwatch-perl \
   libtime-stopwatch-perl \
   libwww-mechanize-perl \
   libwww-mechanize-shell-perl \
