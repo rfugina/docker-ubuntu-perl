@@ -4,8 +4,10 @@ MAINTAINER Rob Fugina <rfugina@wustl.edu>
 ENV DEBIAN_FRONTEND noninteractive
 
 # Update package lists and install updates
-RUN apt-get update && apt-get -y upgrade && apt-get -y autoremove
-RUN apt-get -y install apt-utils gcc git make man vim
+RUN sed -e 's/^deb-src/# deb-src/' -i /etc/apt/sources.list \
+  && sed -e 's/^# deb /deb /' -i /etc/apt/sources.list \
+  && apt-get update && apt-get -y upgrade && apt-get -y autoremove \
+  && apt-get -y install apt-utils gcc git make man vim
 
 # Perl stuff I've decided that I need
 RUN apt-get -y install \
