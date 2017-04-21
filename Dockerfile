@@ -32,6 +32,7 @@ RUN apt-get -y install \
   libnet-imap-simple-ssl-perl \
   libnet-ldap-perl \
   libnet-openssh-perl \
+  libnet-ssh2-perl \
   libnet-twitter-lite-perl \
   libnet-twitter-perl \
   libpar-dist-perl \
@@ -43,7 +44,6 @@ RUN apt-get -y install \
   libtime-hires-perl \
   libtime-parsedate-perl \
   libtime-stopwatch-perl \
-  libtime-stopwatch-perl \
   libwww-mechanize-perl \
   libwww-mechanize-shell-perl \
   libwww-wikipedia-perl \
@@ -51,7 +51,7 @@ RUN apt-get -y install \
   perl-doc
 
 # Perl modules not available in binary packages
-RUN cpan Module::Build::Convert Math::Factoring
+RUN cpan Module::Build::Convert Math::Factoring Net::SSH2::Cisco
 
 ## remove the stuff we don't need any more
 #RUN apt-get -y remove --purge gcc make \
