@@ -27,7 +27,11 @@ RUN apt-get -y install \
   libjson-perl \
   libmath-bigint-gmp-perl \
   libmath-bigint-perl \
+  libmath-gmp-perl \
+  libmath-prime-util-gmp-perl \
+  libmath-prime-util-perl \
   libmodule-build-perl \
+  libmoose-perl \
   libnet-imap-simple-perl \
   libnet-imap-simple-ssl-perl \
   libnet-ldap-perl \
@@ -36,14 +40,18 @@ RUN apt-get -y install \
   libnet-twitter-lite-perl \
   libnet-twitter-perl \
   libpar-dist-perl \
+  libpoe-perl \
   libppi-perl \
   libset-scalar-perl \
+  libsub-uplevel-perl \
   libtest-deep-perl \
+  libtest-exception-perl \
   libtest-pod-coverage-perl \
   libtest-pod-perl \
   libtime-hires-perl \
   libtime-parsedate-perl \
   libtime-stopwatch-perl \
+  libur-perl \
   libwww-mechanize-perl \
   libwww-mechanize-shell-perl \
   libwww-wikipedia-perl \
@@ -51,7 +59,7 @@ RUN apt-get -y install \
   perl-doc
 
 # Perl modules not available in binary packages
-RUN cpan Module::Build::Convert Math::Factoring Net::SSH2::Cisco
+RUN cpan Module::Build::Convert Math::Factoring Net::SSH2::Cisco Net::IMAP::Simple::Gmail
 
 ## remove the stuff we don't need any more
 #RUN apt-get -y remove --purge gcc make \
