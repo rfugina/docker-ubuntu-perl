@@ -11,6 +11,7 @@ RUN sed -e 's/^deb-src/# deb-src/' -i /etc/apt/sources.list \
 
 # Perl stuff I've decided that I need
 RUN apt-get -y install \
+  libcrypt-smbhash-perl \
   libdate-manip-perl \
   libdbd-csv-perl \
   libdevel-dprof-perl \
