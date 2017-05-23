@@ -62,6 +62,8 @@ RUN apt-get -y install \
 # Perl modules not available in binary packages
 RUN cpan Module::Build::Convert Math::Factoring Net::SSH2::Cisco Net::IMAP::Simple::Gmail
 
+WORKDIR /root
+
 ## remove the stuff we don't need any more
 #RUN apt-get -y remove --purge gcc make \
 #  && apt-get -y autoremove \
