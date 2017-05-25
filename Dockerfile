@@ -45,12 +45,14 @@ RUN apt-get -y install \
   libppi-perl \
   libset-scalar-perl \
   libsub-uplevel-perl \
+  libterm-progressbar-perl \
   libtest-deep-perl \
   libtest-exception-perl \
   libtest-pod-coverage-perl \
   libtest-pod-perl \
   libtime-hires-perl \
   libtime-parsedate-perl \
+  libtime-progress-perl \
   libtime-stopwatch-perl \
   libur-perl \
   libwww-mechanize-perl \
@@ -60,7 +62,12 @@ RUN apt-get -y install \
   perl-doc
 
 # Perl modules not available in binary packages
-RUN cpan Module::Build::Convert Math::Factoring Net::SSH2::Cisco Net::IMAP::Simple::Gmail
+RUN cpan Math::GMPq Math::GMPz Math::GMPf
+RUN cpan \
+  Math::Factoring \
+  Module::Build::Convert \
+  Net::IMAP::Simple::Gmail \
+  Net::SSH2::Cisco
 
 WORKDIR /root
 
