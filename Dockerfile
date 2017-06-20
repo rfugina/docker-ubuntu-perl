@@ -25,6 +25,7 @@ RUN apt-get -y install \
   libgraph-perl \
   libio-prompt-perl \
   libio-pty-perl \
+  libjira-client-automated-perl \
   libjson-perl \
   libmath-bigint-gmp-perl \
   libmath-bigint-perl \
@@ -46,6 +47,7 @@ RUN apt-get -y install \
   libset-scalar-perl \
   libsub-uplevel-perl \
   libterm-progressbar-perl \
+  libterm-readpassword-perl \
   libtest-deep-perl \
   libtest-exception-perl \
   libtest-pod-coverage-perl \
@@ -58,12 +60,14 @@ RUN apt-get -y install \
   libwww-mechanize-perl \
   libwww-mechanize-shell-perl \
   libwww-wikipedia-perl \
+  libxml-simple-perl \
   libyaml-perl \
   perl-doc
 
 # Perl modules not available in binary packages
 RUN cpan Math::GMPq Math::GMPz Math::GMPf
 RUN cpan \
+  Amazon::SNS \
   Math::Factoring \
   Module::Build::Convert \
   Net::IMAP::Simple::Gmail \
