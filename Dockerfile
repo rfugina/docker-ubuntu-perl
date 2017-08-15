@@ -14,6 +14,7 @@ RUN apt-get -y install \
   libcrypt-smbhash-perl \
   libdate-manip-perl \
   libdbd-csv-perl \
+  libdbd-pg-perl \
   libdevel-dprof-perl \
   libdevel-profile-perl \
   libdevice-serialport-perl \
