@@ -53,6 +53,7 @@ RUN apt-get -y install \
   libtest-exception-perl \
   libtest-pod-coverage-perl \
   libtest-pod-perl \
+  libtext-csv-perl \
   libtime-hires-perl \
   libtime-parsedate-perl \
   libtime-progress-perl \
