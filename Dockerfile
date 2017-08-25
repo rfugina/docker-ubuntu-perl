@@ -22,6 +22,7 @@ RUN apt-get -y install \
   libencode-perl \
   libfile-homedir-perl \
   libfile-slurp-perl \
+  libfile-touch-perl \
   libgmp-dev \
   libgraph-perl \
   libio-prompt-perl \
