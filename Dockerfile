@@ -67,7 +67,7 @@ RUN apt-get -y install \
   perl-doc
 
 # Perl modules not available in binary packages
-RUN cpan Math::GMPq Math::GMPz Math::GMPf
+RUN cpan Math::GMPq Math::GMPz Math::GMPf Parallel::Forker
 RUN cpan \
   Amazon::SNS \
   Math::Factoring \
