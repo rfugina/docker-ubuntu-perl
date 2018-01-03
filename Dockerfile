@@ -4,7 +4,8 @@ MAINTAINER Rob Fugina <rfugina@wustl.edu>
 ENV DEBIAN_FRONTEND noninteractive
 
 # Update package lists and install updates
-RUN sed -e 's/^deb-src/# deb-src/' -i /etc/apt/sources.list \
+RUN apt-get update && apt-get -y install apt-transport-https \
+  && sed -e 's/^deb-src/# deb-src/' -i /etc/apt/sources.list \
   && sed -e 's/^# deb /deb /' -i /etc/apt/sources.list \
   && apt-get update && apt-get -y upgrade && apt-get -y autoremove \
   && apt-get -y install apt-utils gcc g++ git make man vim
