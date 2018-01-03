@@ -74,7 +74,8 @@ RUN cpan \
   Math::Factoring \
   Module::Build::Convert \
   Net::IMAP::Simple::Gmail \
-  Net::SSH2::Cisco
+  Net::SSH2::Cisco \
+  Paws
 
 WORKDIR /root
 
