@@ -28,6 +28,7 @@ RUN apt-get -y install \
   libgraph-perl \
   libio-prompt-perl \
   libio-pty-perl \
+  libipc-run-perl \
   libjira-client-automated-perl \
   libjson-perl \
   libmath-bigint-gmp-perl \
